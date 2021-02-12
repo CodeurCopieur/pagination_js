@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagination javascript</title>
+  <style>
+    *, ::before, ::before {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    #listLetters li {
+      padding: 5px 0;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .container-list {
+      padding: 5px;
+      width: 60%;
+      margin: 0 auto;
+    }
+
+    #btnList {
+      display: flex;
+      justify-content: center;
+    }
+
+    #btnList li {
+      padding: 5px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="container-list">
+    <h3>Nom</h3>
+    <ul id="listLetters">
+      
+    </ul>
+    <ul id="btnList">
+      <li class="btnFirstPage"><ion-icon name="play-skip-back"></ion-icon></li>
+      <li class="btnPrevious"><ion-icon name="caret-back"></ion-icon></li>
+      <li id="pageInfos"></li>
+      <li class="btnNextPage"><ion-icon name="caret-forward"></ion-icon></li>
+      <li class="btnLastPage"><ion-icon name="play-skip-forward"></ion-icon></li>
+    </ul>
+  </div>
+
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>
